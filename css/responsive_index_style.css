@@ -1,0 +1,45 @@
+
+@media screen and (max-width: 600px) {
+    header img {
+        display: none;
+    }
+
+    header section {
+        background: url('../assets/picture-header.jpg');
+        background-position: -70px;
+    }
+
+    header section h1 {
+        font-size: 12vw;
+        text-shadow: 0px 0px 20px #000000;
+    }
+
+    header section p {
+        font-size: 5vw;
+        color: white;
+        text-shadow: 0px 0px 20px #000000;
+    }
+
+    section.trouver-covoiturage h2 {
+        font-size: 6vw;
+    }
+
+    section.trouver-covoiturage form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 18vh;
+        width: 60%;
+    }
+
+    section.trouver-covoiturage form div {
+        width: 100%;
+        height: 40%;
+    }
+
+    section.trouver-covoiturage form input.green-button {
+        width: 100%;
+        height: 40%;
+    }
+}

@@ -1,0 +1,285 @@
+
+    /* Feuille de styles utilisée pour l'index du site */
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Style du header */
+header {
+    margin-top: calc(9vh + 3px);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    border-bottom: 3px solid black;
+    caret-color: transparent;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--orange-color);
+    text-align: center;
+}
+
+header section h1 {
+    color: white;
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-bottom: 2.5%;
+}
+
+header section p {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    position: absolute;
+    top: calc(9vh + 3px + 50vh + 3px);
+    width: 100%;
+}
+
+section.trouver-covoiturage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 36vh;
+    width: 100%;
+}
+
+section.trouver-covoiturage h2 {
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+    caret-color: transparent;
+}
+
+section.trouver-covoiturage form {
+    height: 22%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+section.trouver-covoiturage form div {
+    height: 100%;
+    width: 65%;
+    background-color: #CFCFCF;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+section.trouver-covoiturage form div img {
+    height: 70%;
+    margin: 1vw;
+}
+
+section.trouver-covoiturage form div input, main section.trouver-covoiturage form div input::placeholder {
+    background-color: unset;
+    border: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 600;
+    opacity: 1;
+    outline: none;
+    font-family: Inter;
+}
+
+section.trouver-covoiturage form div input:focus::placeholder {
+    color: #CFCFCF;
+}
+
+section.trouver-covoiturage form input#green-button {
+    height: 100%;
+    width: 30%;
+    border: 3px solid var(--green-color);
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--green-color);
+    background-color: unset;
+}
+
+section.trouver-covoiturage form input#green-button:hover {
+    animation: smoothhover_green 0.5s ease-out forwards;
+}
+
+section.rejoindre-projet {
+    width: 100%;
+    background-color: var(--gray-color);
+    padding: 4vh 0;
+    color: white;
+}
+
+section.rejoindre-projet h2 {
+    text-align: center;
+    margin-bottom: 4vh;
+    width: 90%;
+    margin: 0 auto 4vh auto;
+}
+
+section.rejoindre-projet p {
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+}
+
+section.cards-part {
+    width: 100%;
+    --space-card: 4vh; 
+    padding: var(--space-card) 0 2vh 0;
+}
+
+section.cards-part h2 {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section.cards-part div.cards-box {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+section.cards-part div.cards-box div {
+    height: 65vh;
+    width: 30%;
+    min-width: 350px;
+    max-width: 450px;
+    margin: var(--space-card) calc(1.5%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0;
+    border: 2px #ABAAAA solid;
+    border-radius: 3px;
+}
+
+section.cards-part div.cards-box div h3 {
+    text-transform: uppercase;
+    color: var(--orange-color);
+    font-size: 1.5em;
+    margin: 3% 0;
+}
+
+section.cards-part div.cards-box div hr {
+    width: 50%;
+    color: black;
+}
+
+section.cards-part div.cards-box div img {
+    width: 50%;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+section.cards-part div.cards-box div p {
+    width: 85%;
+    margin: 3% 0;
+}
+
+section.cards-part div.cards-box div p.citation {
+    color: var(--green-color);
+    font-weight: 600;
+}
+
+section.cards-part p.italic-text {
+    text-align: center;
+    width: 90%;
+    font-size: 1.3em;
+    margin: auto;
+}
+
+section.cards-part p:last-child {
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+/* Style de la zone des chiffres */
+
+section.chiffres {
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+}
+
+section.chiffres h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 4vh;
+}
+
+div.zone-diagramme {
+    margin: 4vh auto;
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    grid-template-rows: 20vw;
+    grid-row-gap: 20px;
+    grid-column-gap: 6%;
+    width: 80%;
+    max-width: 1000px;
+}
+
+div.diagramme {
+    width: 100%;
+    background: conic-gradient(var(--green-color) 56%, var(--gray-white-color) 0deg);
+    border-radius: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+div.zone-diagramme p {
+    grid-area: 1 / 2 / 2 / 3; 
+    font-size: 1.3em;
+    margin: auto 5%;
+}
+
+section.search-box h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+}
+
+section.search-box form {
+    display: flex;
+    justify-content: center;
+}
+
+section.search-box form input {
+    margin: 7vh 0;
+    width: 25vw;
+    color: var(--orange-color);
+}
+
+section.search-box form {
+    margin-bottom: 10vh;
+}
+
+.button {
+    height: 7vh;
+}

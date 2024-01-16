@@ -1,0 +1,48 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    vertical-align: middle;
+    margin: calc(9vh + 3px) auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(91vh - 3px);
+}
+
+form input {
+    margin-top: 3vh;
+    width: 50%;
+}
+
+form input.text-box {
+    border: 3px solid var(--green-color);
+    border-radius: 10px;
+    height: 7vh;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--green-color);
+}
+
+form input.button {
+    max-width: unset;
+    color: var(--orange-color);
+    width: calc(50% + 10px);
+    height: calc(7vh + 8px);
+}
+
+form input.text-box::placeholder {
+    color: var(--green-color);
+    opacity: 1;
+}
+
+form input:first-child {
+    margin-top: unset;
+}

@@ -1,0 +1,152 @@
+
+main {
+    margin-top: calc(9vh + 3px);
+    padding: 5vh 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--green-color);
+    margin-bottom: 5vh;
+}
+
+form {
+    display: flex;
+    height: 8vh;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+form div {
+    display: flex;
+    background-color: red;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #CFCFCF;
+    border-radius: 10px;
+    margin-right: 4vw;
+}
+
+form div img {
+    height: 70%;
+    margin-left: 10px;
+}
+
+form div input {
+    border: none;
+    background: none;
+    font-weight: bold;
+    width: 100%;
+    text-align: start;
+    margin-left: 10px;
+}
+
+form div input:focus {
+    outline: none;
+}
+
+form div input:focus::placeholder {
+    color: #CFCFCF;
+}
+
+form input {
+    height: 97%;
+    font-family: Inter;
+    color: black;
+    border: 3px solid var(--green-color);
+    border-radius: 10px;
+    width: 15%;
+    text-align: center;
+    margin-right: 4vw;
+}
+
+form input::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+}
+
+form input.button {
+    margin: unset;
+    width: calc(15% + 14px);
+    height: calc(97% + 9px);
+}
+
+section {
+    margin-top: 5vh;
+    width: 100vw;
+}
+
+section h2 {
+    margin-bottom: 3vh;
+}
+
+section div {
+    border: solid 2px black;
+    height: 8vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 15px auto;
+}
+
+section div img {
+    height: 80%;
+    border-radius: 50%;
+    margin: 0 2vw;
+}
+
+section div span {
+    font-weight: bold;
+}
+
+section div span:nth-child(3) {
+    color: #999797;
+    margin: 0 2vw;
+}
+
+section div .control {
+    display: none;
+}
+
+section label {
+    user-select: none;
+    border: 3px solid blue;
+    height: 50%;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: blue;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 20px;
+    animation: smoothhover_blue_out ease-in-out forwards 0.5s;
+}
+
+section div .control:checked + label {
+    animation: smoothhover_blue_in ease-in-out forwards 0.5s;
+    font-size: 0;
+}
+
+section div .control:checked + label::before {
+    content: "Inscrit";
+    font-size: initial;
+}
+
+section div span:last-child {
+    margin-left: auto;
+    margin-right: 2vw;
+    color: var(--orange-color);
+}
+
+@media screen and (max-width: 600px) {
+    section div span:nth-child(3) {
+        display: none;
+    }
+}

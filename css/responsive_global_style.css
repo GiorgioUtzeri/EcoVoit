@@ -1,0 +1,13 @@
+
+    /*  Feuille de style contenant des medias querry pour l'aspect respondsive
+        de toutes les pages */
+
+@media screen and (max-width: 635px) {
+    #nav-bar a.lien {
+        display: none;
+    }
+
+    #nav-bar a:last-child {
+        margin-left: auto;
+    }
+}
